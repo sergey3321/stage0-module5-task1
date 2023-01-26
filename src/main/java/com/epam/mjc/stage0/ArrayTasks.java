@@ -27,10 +27,10 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
+
         if (length > 0) {
             for (int i = 1; i <= length; i++) {
-                int[] userNumbersForReturn = {i};
-                return userNumbersForReturn;
+
             }
         }
         return new int[]{length};
@@ -45,10 +45,11 @@ public class ArrayTasks {
      * arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-        for (int i = 0; i <= arr.length; i++) {
-            sumNumbersFromArr = sumNumbersFromArr + arr[i];
+        int sumNumberFromArray = 0;
+        for (int i = 0; i < arr.length; i++) {
+            sumNumberFromArray += arr[i];
         }
-        return sumNumbersFromArr;
+        return sumNumberFromArray;
     }
 
     /**
